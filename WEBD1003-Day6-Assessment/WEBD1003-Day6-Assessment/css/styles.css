@@ -1,7 +1,106 @@
-/* ***************** utilities & containers ***************** */
+/* universal */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/* ***************** global typography ***************** */
+/* utility classes */
+.inner-container {
+    max-width: 95.5rem;
+    margin: 0 auto;
+}
 
-/* ***************** header & footer ***************** */
+.flex-container {
+    display: flex;
+    gap: 2rem;
+    /* gap remains the same between the staff members and services, so universal css was used */
 
-/* ***************** main content ***************** */
+}
+
+/* typography */
+
+header {
+    background-color: #0C4A6E;
+    padding: 1.625rem;
+}
+
+h1 {
+    font-size: 1.625rem;
+    font-weight: bold;
+    color: #FAFAFA;
+
+}
+
+h2 {
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: #000;
+    padding: 1.5rem 0;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+}
+
+h4 {
+    font-size: 2.125rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.team-members .flex-container {
+    flex-wrap: wrap;
+
+}
+
+.team-members .flex-container section {
+    display: flex;
+    gap: 3.5rem;
+    padding: 2.5rem 1.75rem;
+    background-color: #C3C3C4;
+    width: calc((100% / 2) - (2rem / 2));
+
+}
+
+.team-members p {
+    font-size: 1rem;
+    color: #000;
+}
+
+.service-plans .flex-container .service-sections {
+        background-color: #C3C3C4;
+    text-align: center;
+    /* text align was used to place text in the center of the boxes */
+  display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    padding: 1.75rem;
+    width: calc((100% / 3) - (2rem / 3));
+    flex-direction: column;
+    /* justify content was used to spread the boxes throughout the inner container */
+}
+
+
+.service-plans .flex-container .service-sections p {
+    color: #0C4A6E;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.service-plans .flex-container .service-sections ul {
+    font-size: 1rem;
+    text-align: left;
+    margin: auto;
+    /* text align was used to ajust the bullet points to align with figma image */
+}
+
+
+footer {
+    padding: 1.625rem;
+    background-color: #0C4A6E;
+}
+
+footer .inner-container {
+    color: #FAFAFA;
+}
